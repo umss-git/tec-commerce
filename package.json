@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:client": "ng build --prod --build-optimizer",
     "test": "ng test",
+    "test:client": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
