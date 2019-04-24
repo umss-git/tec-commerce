@@ -36,3 +36,12 @@ jobs:
           paths:
             - dist
             - package.json
+
+workflows:
+  version: 2
+  -deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: develop
